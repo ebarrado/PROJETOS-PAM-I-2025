@@ -28,16 +28,30 @@ class HomeColunas extends StatelessWidget {
         title: Text("Tela de Login", style: TextStyle(color: Colors.white)),
         backgroundColor: Colors.amber,
       ),
-      body: Column(
-        children: [
-          Text("Tela de Login"),
-          TextFormField(
-            decoration: InputDecoration(
-              labelText: "Usuário",
-              border: OutlineInputBorder(),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text("Faça Login"),
+            SizedBox(height: 10),
+            TextFormField(
+              decoration: InputDecoration(
+                labelText: "Usuário",
+                border: OutlineInputBorder(),
+              ),
             ),
-          ),
-        ],
+            SizedBox(height: 10),
+            TextFormField(
+              decoration: InputDecoration(
+                labelText: "Senha",
+                border: OutlineInputBorder(),
+              ),
+            ),
+            SizedBox(height: 10),
+          ],
+        ),
       ),
     );
   }

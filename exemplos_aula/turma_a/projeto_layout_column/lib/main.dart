@@ -34,6 +34,11 @@ class HomeColunas extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            Image.network(
+              "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/color-logo-design-template-2b21eef46e5a1a5cdf9bb5a001074bd1_screen.jpg?ts=1567014385",
+              height: 120,
+              width: 120,
+            ),
             Text("Faça Login"),
             SizedBox(height: 20),
             TextFormField(

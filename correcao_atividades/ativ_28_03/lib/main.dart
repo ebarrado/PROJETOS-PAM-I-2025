@@ -100,8 +100,9 @@ class MyHomePage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Icon(Icons.add),
-        backgroundColor: Colors.pink,
+        child: Icon(Icons.add, color: Colors.white),
+
+        backgroundColor: Colors.purple,
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
     );

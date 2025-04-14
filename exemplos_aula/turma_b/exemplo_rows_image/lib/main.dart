@@ -19,16 +19,20 @@ class ExemploRowImage extends StatelessWidget {
             style: TextStyle(color: Colors.white),
           ),
         ),
-        body: Row(),
+        body: Row(
+          children: [
+            Image.asset("1.jpg", height: 100, width: 100),
+            Image.asset("2.png", height: 100, width: 100),
+            Image.asset("3.jpg", height: 100, width: 100),
+          ],
+        ),
         bottomNavigationBar: BottomNavigationBar(
           items: [
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Inicio"),
             BottomNavigationBarItem(
-              icon: Icon(Icons.home), 
-              label: "Inicio"),
-              BottomNavigationBarItem(
-              icon: Icon(Icons.settings), 
-              label: "Configurações"),
-
+              icon: Icon(Icons.settings),
+              label: "Configurações",
+            ),
           ],
         ),
       ),

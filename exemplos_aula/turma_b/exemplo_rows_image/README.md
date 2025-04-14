@@ -1,16 +1,40 @@
-# exemplo_rows_image
+# Criando projeto usando Rows e Image Asset
 
-A new Flutter project.
+## Widget Image
 
-## Getting Started
+Existem quatro tipos básicos de imagem: o Asset, o Network, o File e o Memory.
 
-This project is a starting point for a Flutter application.
+- `Asset`: a imagem está vindo do projeto
+- `Network`: a imagem vem da Internet, então fornecemos uma URL, que é o caminho da imagem, e ele baixa e mostra para nós no projeto
+- `File`: pega a imagem de dentro do dispositivo
+- `Memory`: pega de um arquivo da memória do dispositivo.
 
-A few resources to get you started if this is your first Flutter project:
+# Usando o tipo Asset
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Primeiro baixe as imagens desejadas e salve em uma pasta com o nome `image`na raiz do projeto.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![alt text](image.png)
+
+Abra o arquivo `pubspec.yaml`
+- Tire o comentário da linha com **# asset**, normalmente presente na linha 61
+- Tire o comentário da linha com **# image/a_dot_burr.jpeg**, , normalmente presente na linha 62
+
+![alt text](image-1.png)
+
+- Coloque o assets no inicio da linha 61 e o nome da pasta de imagens que foi criada na raiz do projeto.
+
+![alt text](image-2.png)
+
+Agora volte ao arquivo main.dart e acrescente na linha os `children`Image
+
+![alt text](image-3.png)
+
+````
+ body: Row(
+          children: [
+            Image.asset("1.jpg", height: 100, width: 100),
+            Image.asset("2.png", height: 100, width: 100),
+            Image.asset("3.jpg", height: 100, width: 100),
+          ],
+        ),
+````

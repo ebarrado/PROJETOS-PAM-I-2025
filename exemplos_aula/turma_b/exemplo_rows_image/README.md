@@ -16,7 +16,7 @@ Primeiro baixe as imagens desejadas e salve em uma pasta com o nome `image`na ra
 ![alt text](image.png)
 
 Abra o arquivo `pubspec.yaml`
-- Tire o comentário da linha com **# asset**, normalmente presente na linha 61
+- Tire o comentário da linha com **# assets**, normalmente presente na linha 61
 - Tire o comentário da linha com **# image/a_dot_burr.jpeg**, , normalmente presente na linha 62
 
 ![alt text](image-1.png)
@@ -24,6 +24,26 @@ Abra o arquivo `pubspec.yaml`
 - Coloque o assets no inicio da linha 61 e o nome da pasta de imagens que foi criada na raiz do projeto.
 
 ![alt text](image-2.png)
+
+**Obs** Caso tenha erro ao visualizar a imagem altere o nome da pasta para **assets** 
+
+![alt text](image-4.png)
+
+Exemplo:
+````
+assets:
+      - assets/
+  #   - images/a_dot_ham.jpeg
+````
+ - Não deixe espaço na linha do assets
+ - Pode utilizar uma subpasta image na pasta assets
+
+ Exemplo:
+ ````
+ assets:
+      - assets/image
+  #   - images/a_dot_ham.jpeg
+ ````
 
 Agora volte ao arquivo main.dart e acrescente na linha os `children`Image
 

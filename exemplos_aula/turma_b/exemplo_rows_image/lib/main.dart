@@ -14,16 +14,20 @@ class ExemploRowImage extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.black,
+
           title: Text(
             "Linhas para Imagens",
             style: TextStyle(color: Colors.white),
           ),
         ),
         body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Image.asset("1.jpg", height: 100, width: 100),
-            Image.asset("2.png", height: 100, width: 100),
-            Image.asset("3.jpg", height: 100, width: 100),
+            Image.asset("4.jpg", height: 150, width: 150),
+            Image.asset("5.jpg", height: 150, width: 150),
+            Image.asset("6.jpg", height: 150, width: 150),
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(

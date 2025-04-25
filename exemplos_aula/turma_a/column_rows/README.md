@@ -28,3 +28,9 @@ Column(
     ElevatedButton(onPressed: () {}, child: Text('Botão')),
   ],
 )
+```
+
+## Exemplo Tela criada
+
+![alt text](../../img/column.png)
+

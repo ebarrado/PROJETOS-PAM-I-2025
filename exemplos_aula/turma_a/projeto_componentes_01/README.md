@@ -1,16 +1,44 @@
-# projeto_componentes_01
+# 📱 Flutter - Primeira Tela com AppBar e BottomNavigationBar
 
-A new Flutter project.
+Este projeto Flutter é um exemplo prático de como criar uma tela inicial com `AppBar`, `BottomNavigationBar`, `Column`, e `Container`. O layout foi desenvolvido para fins didáticos, especialmente em aulas de Desenvolvimento de Sistemas 2025.
 
-## Getting Started
+## 🎯 Objetivo
 
-This project is a starting point for a Flutter application.
+Demonstrar a estrutura básica de uma tela com:
 
-A few resources to get you started if this is your first Flutter project:
+- Barra superior (`AppBar`) com ícones de menu e busca.
+- Conteúdo central com texto e containers coloridos.
+- Barra inferior de navegação (`BottomNavigationBar`).
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🖼️ Layout
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### AppBar
+
+- Título: **WhatsApp**
+- Ícone de menu à esquerda.
+- Ícone de busca à direita com ação de `print`.
+
+### Corpo
+
+- Um texto central dentro de um `Container` colorido.
+- Um segundo `Container` exibido abaixo.
+- Todos os elementos estão centralizados com `Padding` e `SizedBox` para espaçamento.
+
+### BottomNavigationBar
+
+- Ícones de navegação: Início e outro item (você pode completar conforme sua necessidade).
+- Cores configuradas para destacar o item selecionado.
+
+## 🚀 Como executar
+
+1. Certifique-se de ter o Flutter instalado.
+2. Clone este repositório:
+
+````bash
+git clone https://github.com/seu-usuario/flutter_primeira_tela.git
+cd flutter_primeira_tela
+````
+
+## Exemplo tela criada
+
+![alt text](../../img/tela_projeto_componentes.png)

@@ -41,7 +41,7 @@ assets:
  Exemplo:
  ````
  assets:
-      - assets/image
+      - assets/image/
   #   - images/a_dot_ham.jpeg
  ````
 

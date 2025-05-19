@@ -27,7 +27,7 @@ Nesta atividade prática, você irá criar uma tela utilizando colunas e linhas,
 
 ````dart
  TextField(
-                  controller: nomeItemController,
+                  
                   decoration: const InputDecoration(
                     labelText: 'Pesquisa',
                     border: OutlineInputBorder(),

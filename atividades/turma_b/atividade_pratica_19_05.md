@@ -21,3 +21,15 @@ Nesta atividade prática, você irá criar uma tela utilizando colunas e linhas,
 
 ---
 **Dica:** Utilize propriedades como `mainAxisAlignment` e `crossAxisAlignment` para ajustar o posicionamento dos elementos.
+
+
+## Exemplo TextField
+
+````dart
+ TextField(
+                  controller: nomeItemController,
+                  decoration: const InputDecoration(
+                    labelText: 'Pesquisa',
+                    border: OutlineInputBorder(),
+                  )
+````

@@ -34,6 +34,7 @@ class MyHomePage extends StatelessWidget {
     );
   }
 }
+
 class Item extends StatelessWidget {
   const Item({super.key});
 
@@ -42,18 +43,27 @@ class Item extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        Column(
-          children: [
-            Icon(Icons.star, color: Colors.yellow[700]),
-            Text('Item 1'),
-          ],
-        ),
+        Container(
+          color: Colors.deepOrange,
 
-        Column(
-          children: [
-            Icon(Icons.ad_units_rounded, color: Colors.yellow[700]),
-            Text('Item 2'),
-          ],
+          child: Column(
+            children: [
+              Icon(Icons.star, color: Colors.yellow[700]),
+              Text('Item 1'),
+            ],
+          ),
+        ),
+        SizedBox(height: 10),
+        Container(
+          color: Colors.blue[100],
+
+          child: Column(
+            children: [
+              Icon(Icons.ad_units_rounded, color: Colors.yellow[700]),
+
+              Text('Item 2'),
+            ],
+          ),
         ),
       ],
     );
